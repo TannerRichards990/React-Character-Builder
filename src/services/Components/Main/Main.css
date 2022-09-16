@@ -3,4 +3,19 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.changedCount {
+  background: skyblue;
+  height: 40%;
+  width: 60%;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+
 }

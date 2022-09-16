@@ -1,11 +1,16 @@
 .controls {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 100vw;
+  max-height: 100%;
+  background: skyblue;
+  margin: 0 auto;
 }
 
 label {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
 }

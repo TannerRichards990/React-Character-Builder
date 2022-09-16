@@ -36,11 +36,6 @@ export default function Main() {
   return (
     <div className="carPreview">
 
-      <Car
-        body={body}
-        wheels={wheels}
-        decal={decal}
-      />
 
       <Controls
         body={body}
@@ -53,6 +48,15 @@ export default function Main() {
         addSlogan={addSlogan}
         newSlogan={newSlogan}
       />
+
+
+      <Car
+        body={body}
+        wheels={wheels}
+        decal={decal}
+      />
+
+  
 
       <div className='changedCount'>{changedCount}</div>
 
