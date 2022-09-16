@@ -7,7 +7,7 @@ export default function Slogan({ sloganArr }) {
   });
 
   return (
-    <div className="slogan">
+    <div className="slogans">
       {slogans}
     </div>
   );
