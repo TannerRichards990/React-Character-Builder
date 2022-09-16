@@ -1,5 +1,5 @@
 import React from 'react';
-import './slogan.css';
+import './Slogan.css';
 
 export default function Slogan({ sloganArr }) {
   const slogans = sloganArr.map((slogan, index) => {

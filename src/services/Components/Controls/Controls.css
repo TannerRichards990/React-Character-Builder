@@ -1,0 +1,11 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+label {
+  display: contents;
+}

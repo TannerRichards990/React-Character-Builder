@@ -1,0 +1,37 @@
+.body {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  bottom: 30%;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 30px;
+
+}
+
+.wheels {
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 30px;
+
+}
+
+.decal {
+  top: 80%;
+  left: 40%;
+  position: absolute;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 30px;
+
+}
+
+.character {
+  height: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
