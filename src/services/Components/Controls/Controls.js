@@ -8,8 +8,11 @@ export default function Controls({
   decal,
   setDecal,
   setBodyCount,
-  setWheelsCount,
+  setWheelCount,
   setDecalCount,
+  slogan,
+  newSlogan,
+  addSlogan,
 }) 
 
 {
@@ -20,7 +23,7 @@ export default function Controls({
 
   const handleChangeWheels = (e) => {
     setWheels(e.target.value);
-    setWheelsCount((prevCount) => prevCount + 1);
+    setWheelCount((prevCount) => prevCount + 1);
   };
 
   const handleChangeDecal = (e) => {
@@ -54,6 +57,9 @@ export default function Controls({
           <option value="chameleon">Chameleon</option>
         </select>
       </label>
+      <textarea className='slogan-input' value={slogan} onChange={(e) => newSlogan(e.target.value)} />
+      <button onClick={addSlogan}>Add Slogan</button>
+
       
     </div>
 

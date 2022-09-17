@@ -12,5 +12,9 @@ label {
   flex-direction: column;
   margin: 20px;
   height: 100px;
-  width: 100px;
+  width: 300px;
+}
+
+.slogan-input {
+  margin: 20px;
 }

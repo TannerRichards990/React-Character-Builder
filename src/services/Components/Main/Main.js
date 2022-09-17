@@ -5,6 +5,7 @@ import Controls from '../Controls/Controls';
 import Car from '../Car/Car';
 import Slogan from '../Slogan/Slogan';
 
+
 export default function Main() {
   const [body, setBody] = useState('octane');
   const [wheels, setWheels] = useState('tunica');
@@ -14,19 +15,11 @@ export default function Main() {
   const [decalCount, setDecalCount] = useState(0);
   const [slogan, newSlogan] = useState('');
   const [sloganArr, setSloganArr] = useState([]);
+  
 
 
-  const handleIncrement = (carPart) => {
-    if (carPart === 'body') {
-      setBodyCount((prevCount) => prevCount + 1);
-    } else if (carPart === 'wheels') {
-      setWheelsCount((prevCount) => prevCount + 1);
-    } else if (carPart === 'decal') {
-      setDecalCount((prevCount) => prevCount + 1);
-    }
-  }; 
 
-  const addSlogan = (e) => {
+  const addSlogan = () => {
     setSloganArr(prevSlogans => [...prevSlogans, slogan]);
     newSlogan('');
   };
@@ -40,11 +33,13 @@ export default function Main() {
       <Controls
         body={body}
         setBody={setBody}
+        setBodyCount={setBodyCount}
         wheels={wheels}
         setWheels={setWheels}
+        setWheelCount={setWheelsCount}
         decal={decal}
         setDecal={setDecal}
-        handleIncrement={handleIncrement}
+        setDecalCount={setDecalCount}
         addSlogan={addSlogan}
         newSlogan={newSlogan}
       />
