@@ -3,9 +3,9 @@ import './Slogan.css';
 
 export default function Slogan({ sloganArr }) {
   const slogans = sloganArr.map((slogan, index) => {
-    <p key={index}>{Slogan}</p>;
+    return <p key={index}>{slogan}</p>;
   });
-
+  
   return (
     <div className="slogans">Slogans:
       {slogans}

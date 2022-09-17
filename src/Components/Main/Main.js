@@ -21,7 +21,7 @@ export default function Main() {
 
   const addSlogan = () => {
     setSloganArr(prevSlogans => [...prevSlogans, slogan]);
-    newSlogan('');
+    // newSlogan('');
   };
 
   const changedCount = `you have changed the body ${bodyCount} times, the wheels ${wheelsCount} times, and the decal ${decalCount} times`;
@@ -40,6 +40,7 @@ export default function Main() {
         decal={decal}
         setDecal={setDecal}
         setDecalCount={setDecalCount}
+        slogan={slogan}
         addSlogan={addSlogan}
         newSlogan={newSlogan}
       />
